@@ -69,8 +69,8 @@ export default function TodosPage() {
                             className="border rounded-md p-4 flex justify-between items-center"
                         >
                             <div>
-                                <h3 className="font-semibold">{todo.title}</h3>
-                                <p className="text-sm text-gray-500">{todo.description}</p>
+                                <h3 className="font-semibold text-[#121212]">{todo.title}</h3>
+                                <p className="text-sm text-[#121212]">{todo.description}</p>
                             </div>
 
                             <div className="flex gap-2">
@@ -106,14 +106,14 @@ export default function TodosPage() {
                 <div className="absolute inset-0 bg-black/50 flex justify-center items-center">
                     <div className="bg-white max-w-md w-full p-4 rounded-md">
                         <input
-                            className="w-full border p-2 mb-2"
+                            className="w-full border p-2 mb-2 text-[#121212]"
                             placeholder="Title"
                             value={title}
                             onChange={e => setTitle(e.target.value)}
                         />
                         <textarea
                             rows={6}
-                            className="w-full border p-2"
+                            className="w-full border p-2 text-[#121212]"
                             placeholder="Description"
                             value={description}
                             onChange={e => setDescription(e.target.value)}
